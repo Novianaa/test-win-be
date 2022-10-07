@@ -24,7 +24,8 @@
 
 Project test PT.Widya Informasi Nusantara.
 
-[Dokumentasi Postman](https://documenter.getpostman.com/view/21597644/2s83zgu57N)
+[Dokumentasi Postman](https://documenter.getpostman.com/view/21597644/2s83zgu57N)<br/>
+[Deploy Backend](https://test-win-be.vercel.app/)
 
 ### Built With
 
