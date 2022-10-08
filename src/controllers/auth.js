@@ -34,13 +34,14 @@ module.exports = {
       if ((await bcrypt.compare(password, result.rows[0].password)) == false) {
         return helperWrapper.response(res, 400, "Wrong Password")
       }
-      const token = jwt.sign({ user_id: result.rows[0].id, email: result.rows[0].email, name: result.rows[0].name }, process.env.JWT_SECRET_KEY, {
+      const token = jwt.sign({ user_id: result.rows[0].id, email: result.rows[0].email, name: result.rows[0].name, photo: result.rows[0].photo }, process.env.JWT_SECRET_KEY, {
         expiresIn: '1 day'
       })
       return helperWrapper.response(res, 201, 'Success login', {
         user_id: result.rows[0].id,
         email: result.rows[0].email,
         name: result.rows[0].name,
+        photo: result.rows[0].photo
         token
       })
 

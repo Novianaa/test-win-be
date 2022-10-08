@@ -9,7 +9,7 @@ const PORT = process.env.PG_PORT || 5000
 const router = require('./src/routes/index')
 
 let corsOptions = {
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://backend-tickitz.herokuapp.com', 'https://tickitz-fe-novianaa.vercel.app'],
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://novia-win-fe.netlify.app'],
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
