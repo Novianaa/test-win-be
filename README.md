@@ -25,7 +25,7 @@
 Project test PT.Widya Informasi Nusantara.
 
 [Dokumentasi Postman](https://documenter.getpostman.com/view/21597644/2s83zgu57N)<br/>
-[Deploy Backend](https://test-win-be.vercel.app/)
+[Deploy Backend on Vercel](https://test-win-be.vercel.app/)
 
 ### Built With
 
@@ -38,17 +38,16 @@ Project test PT.Widya Informasi Nusantara.
 
 ### End-Point
 
-
-| Request                                       | endpoint                                   |
-| --------------------------------------------- | ------------------------------------------ |
-| Register                                      | /auth/register                             |
-| Login                                         | /auth/login                                |
-| Get profile                                   | /profile/                                  |
-| Add product                                   | /product/                                  |
-| Get all product with search, sort, pagination | /product/?keyword=&orderBy=&sortBy=&limit= |
-| Get product by id                             | product/:id                                |
-| Update product by id                          | product/:id                                |
-| Delete Product by id                          | product/:id                                |
+| Request                                       | endpoint                                         |
+| --------------------------------------------- | ------------------------------------------------ |
+| Register                                      | api/v1/auth/register                             |
+| Login                                         | api/v1/auth/login                                |
+| Get profile                                   | api/v1/profile/                                  |
+| Add product                                   | api/v1/product/                                  |
+| Get all product with search, sort, pagination | api/v1/product/?keyword=&orderBy=&sortBy=&limit= |
+| Get product by id                             | api/v1/product/:id                               |
+| Update product by id                          | api/v1/product/:id                               |
+| Delete Product by id                          | api/v1/product/:id                               |
 
 
 
@@ -78,7 +77,13 @@ cd WIN-be
 npm i
 ```
 
-3. Start the project
+3. Add configuration in `.env` file
+
+```sh
+configuration .env look in .env.example
+```
+
+4. Start the project
 
 ```sh
 npm start
