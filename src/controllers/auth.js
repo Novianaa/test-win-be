@@ -41,7 +41,7 @@ module.exports = {
         user_id: result.rows[0].id,
         email: result.rows[0].email,
         name: result.rows[0].name,
-        photo: result.rows[0].photo
+        photo: result.rows[0].photo,
         token
       })
 
